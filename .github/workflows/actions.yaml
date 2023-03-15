@@ -45,7 +45,7 @@ jobs:
         run: terraform validate
 
       - name: Terraform Apply
-        if: github.ref == 'main'
+        if: github.event_name == 'push'
         run: terraform apply -auto-approve
 
 
