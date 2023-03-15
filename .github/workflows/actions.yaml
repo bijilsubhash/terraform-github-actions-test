@@ -43,6 +43,11 @@ jobs:
       - name: Terraform validate
         id: validate
         run: terraform validate
-        
+
+      - name: Terraform Apply
+        if: github.ref == 'main'
+        run: terraform apply -auto-approve
+
+
 
       
