@@ -1,1 +1,3 @@
 aws-backend/
+terraform/.terraform
+terraform/.terraform.lock.hcl
