@@ -36,4 +36,4 @@ jobs:
         
       - name: Terraform init
         id: init
-        run terraform init -backend-config="bucket=$BUCKET_TF_STATE"
+        run: terraform init -backend-config="bucket=$BUCKET_TF_STATE"
